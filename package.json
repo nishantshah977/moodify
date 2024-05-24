@@ -5,7 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
-    "build": "electron-builder"
+    "build": "electron-builder",
+    "release": "electron-builder --publish always",
+    "postinstall": "electron-builder install-app-deps"
   },
   "author": "Nishant Shah",
   "license": "ISC",
@@ -14,6 +16,5 @@
     "electron": "^30.0.8",
     "electron-builder": "^24.13.3"
   },
-  "postinstall": "electron-builder install-app-deps",
   "repository": "https://github.com/nishantshah977/moodify"
 }
