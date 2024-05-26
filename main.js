@@ -1,8 +1,8 @@
 const { app, BrowserWindow, shell, ipcMain } = require("electron");
-const { autoUpdater } = require("electron-updater");
 const ytubes = require("ytubes");
 const ytdl = require("ytdl-core");
 const path = require("path");
+require("electron-simple-updater");
 
 let win;
 
@@ -29,7 +29,6 @@ function createWindow() {
 
 app.whenReady().then(() => {
   createWindow();
-  autoUpdater.checkForUpdatesAndNotify();
 });
 
 app.on("window-all-closed", () => {

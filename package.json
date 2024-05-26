@@ -1,6 +1,6 @@
 {
   "name": "moodfiy",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -18,8 +18,11 @@
   },
   "repository": "https://github.com/nishantshah977/moodify",
   "dependencies": {
+    "electron-simple-updater": "^2.0.11",
     "ytdl-core": "^4.11.5",
-    "ytubes": "^1.3.1",
-    "electron-updater": "^6.1.8"
+    "ytubes": "^1.3.1"
+  },
+  "updater": {
+    "url": "https://raw.githubusercontent.com/nishantshah977/moodify/main/updates/{platform}-{arch}-{channel}.json"
   }
 }
