@@ -1,6 +1,6 @@
 {
   "name": "moodfiy",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "main": "main.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -14,7 +14,12 @@
   "description": "",
   "devDependencies": {
     "electron": "^30.0.8",
-    "electron-builder": "^24.13.3"
+    "electron-builder": "^24.13.3",
+    "electron-updater": "^6.1.8"
   },
-  "repository": "https://github.com/nishantshah977/moodify"
+  "repository": "https://github.com/nishantshah977/moodify",
+  "dependencies": {
+    "ytdl-core": "^4.11.5",
+    "ytubes": "^1.3.1"
+  }
 }

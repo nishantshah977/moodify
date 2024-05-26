@@ -3,21 +3,22 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Moodfiy - Youtube Music Player</title>
+    <title>Moodify - YouTube Music Player</title>
     <link
       href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
       rel="stylesheet"
     />
   </head>
   <body class="bg-gray-100">
-    <!--- Global Loader --->
+    <!-- Global Loader -->
     <div
       id="globalLoader"
       class="hidden fixed bg-white flex items-center justify-center w-full h-screen text-gray-900 dark:text-gray-100 dark:bg-gray-950"
     >
       <div>
         <h1 class="text-xl md:text-7xl font-bold flex items-center">
-          L<svg
+          L
+          <svg
             stroke="currentColor"
             fill="currentColor"
             stroke-width="0"
@@ -36,7 +37,7 @@
       </div>
     </div>
     <div class="container mx-auto p-4">
-      <h1 class="text-2xl font-bold mb-4">What you want to Listen?</h1>
+      <h1 class="text-2xl font-bold mb-4">What do you want to listen?</h1>
       <form class="mb-4" id="queryForm">
         <input
           id="searchInput"
@@ -51,21 +52,21 @@
         </button>
       </form>
       <div
-        id="videos"
+        id="musics"
         class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4"
       ></div>
     </div>
     <div class="fixed bottom-0 right-0 text-xs bg-gray-200">
       <p class="p-2 text-xs">
-        More Coming soon.
+        More coming soon.
         <a
           href="https://github.com/nishantshah977/moodify"
           class="text-blue-500"
           target="_blank"
-          >Github</a
+          >GitHub</a
         >
       </p>
     </div>
-    <script src="app.js"></script>
+    <script src="./app.js"></script>
   </body>
 </html>
